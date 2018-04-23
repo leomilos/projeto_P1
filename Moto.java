@@ -19,9 +19,9 @@ class Moto extends Automovel{
   }
   public void mover(){
     ///move a moto
-    for(int i=0;i<velocidade;i++){
-       a.move();
-     }
+    a.move();
+    a.move();
+    a.move();
   }
   public int getx(){
     ///devolve o x caso necessario
