@@ -17,8 +17,9 @@ class Carro extends Automovel{
     a.setcor("Vermelho");
   }
    public void mover(){
+     for(int i=0;i<a.getvelocidade();i++){
        a.move();
-       a.move();
+     }
   }
   public int getx(){
     ///devolve o x caso necessario
