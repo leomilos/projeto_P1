@@ -1,6 +1,7 @@
 class Mundo{
   private int [][] mundo = new int[30][60];
-  public void prenche(){//cria o mundo com fabricas 
+  ///cria o mundo com fabricas 
+  public void prenche(){
     for(int i=0;i<30;i++){
       for(int j=0;j<60;j++){
         if(i==0||i==29||j==0||j==59){
@@ -25,7 +26,8 @@ class Mundo{
     }
   }
   
-  public void imprime(){//imprime o mundo de cada cor dependendo de onde os objetos estao
+  ///imprime o mundo de cada cor dependendo de onde os objetos estao
+  public void imprime(){
     for(int i=0;i<30;i++){
         for(int j=0;j<60;j++){
           if(mundo[i][j]==0){
@@ -51,10 +53,12 @@ class Mundo{
       }
       System.out.printf( "\n\n\n\n\n\n\n\n\n");
   }
+  ///define uma posicao pro objeto pedido
   public void setposicao(int x,int y,int objeto){
-    mundo[x][y] = objeto;//define uma posicao pro objeto pedido
+    mundo[x][y] = objeto;
   }
+  ///devolve o mundo pra funcao
   public int[][] getmundo(){
-    return mundo;//devolve o mundo pra funcao
+    return mundo;
   }
 }

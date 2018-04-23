@@ -1,31 +1,42 @@
 import java.util.ArrayList;
 import java.util.Random;
-class Moto extends Automovel{//cria uma moto com mesmas propriedades dos automovel
+///cria uma moto com mesmas propriedades dos automovel
+class Moto extends Automovel{
   Automovel a=new Automovel();
   private int capacidade_carga;
   public void CriaMoto(){
     Random gerador = new Random();
-    int temp = gerador.nextInt(29);//gera um numero aleatorio pro x
-    int temp2 = gerador.nextInt(59);//gera um numero aleatorio para o y
-    a.setposicao(temp,temp2);//define aonde vai comecar a moto
-    a.setvelocidade(3);//define a velocidade da moto
-    a.setcor("Azul");//define a cor da moto
+    ///gera um numero aleatorio pro x
+    int temp = gerador.nextInt(29);
+    ///gera um numero aleatorio para o y
+    int temp2 = gerador.nextInt(59);
+    ///define aonde vai comecar a moto
+    a.setposicao(temp,temp2);
+    ///define a velocidade da moto
+    a.setvelocidade(3);
+    ///define a cor da moto
+    a.setcor("Azul");
   }
   public void mover(){
+    ///move a moto
     for(int i=0;i<velocidade;i++){
-       a.move();//move a moto
+       a.move();
      }
   }
   public int getx(){
-    return a.getx();//devolve o x caso necessario
+    ///devolve o x caso necessario
+    return a.getx();
   }
   public int gety(){
-    return a.gety();//devolve o y caso necessario
+    ///devolve o y caso necessario
+    return a.gety();
   }
   public boolean getf(){
-    return getfabrica();//retorna o boolean da fabrica se necessario
+    ///retorna o boolean da fabrica se necessario
+    return getfabrica();
   }
   public void setf(boolean f){
-    setfabrica(f);//define o boleano da fabrica
+    ///define o boleano da fabrica
+    setfabrica(f);
   }
 }

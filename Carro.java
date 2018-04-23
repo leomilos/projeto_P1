@@ -5,27 +5,37 @@ class Carro extends Automovel{
   private int num_passageiros;
   public void CriaCarro(){
     Random gerador = new Random();
-    int temp = gerador.nextInt(29);//gera um numero aleatorio pro x
-    int temp2 = gerador.nextInt(59);//gera um numero aleatorio para o y
-    a.setposicao(temp,temp2);//define a posicao do carro
-    a.setvelocidade(2);//define a velocidade do carro
-    a.setcor("Vermelho");//define a cor do carro
+    ///gera um numero aleatorio para o x
+    int temp = gerador.nextInt(29);
+    ///gera um numero aleatorio para y
+    int temp2 = gerador.nextInt(59);
+    ///define a posicao do carro
+    a.setposicao(temp,temp2);
+    ///define a velocidade do carro
+    a.setvelocidade(2);
+    ///define a cor do carro
+    a.setcor("Vermelho");
   }
    public void mover(){
      for(int i=0;i<velocidade;i++){
-       a.move();//move o carro
+      ///move o carro
+       a.move();
      }
   }
   public int getx(){
-    return a.getx();//devolve o x caso necessario
+    ///devolve o x caso necessario
+    return a.getx();
   }
   public int gety(){
-    return a.gety();//devolve o y caso necessario
+    ///devolve o y caso necessario
+    return a.gety();
   }
   public boolean getf(){
-    return getfabrica();//retorna o boolean da fabrica se necessario
+    ///retorna o boolean da fabrica se necessario
+    return getfabrica();
   }
   public void setf(boolean f){
-    setfabrica(f);//define o boleano da fabrica
+    ///define o boleano da fabrica
+    setfabrica(f);
   }
 }
